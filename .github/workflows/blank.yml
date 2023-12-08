@@ -30,10 +30,6 @@ jobs:
       - name: Automation using Any CLI
         run: anypoint-cli-v4 account:user:describe -o json --environment dev  --client_id cf35d4be7ac7441ab443e09eced6fca6 --client_secret 5264E7A842BD47Ceaa57e6e6Dd12E311
 
-      # Automation using Any CLI
-      - name: Check Load Balancers
-        run: anypoint-cli-v4 cloudhub:load-balancer:list -o json --environment dev --client_id cf35d4be7ac7441ab443e09eced6fca6 --client_secret 5264E7A842BD47Ceaa57e6e6Dd12E311
-
      # Automation using Any CLI
       - name: List cloudhub 1 applications
         run: anypoint-cli-v4 runtime-mgr:cloudhub-application:list -o json --environment dev --client_id cf35d4be7ac7441ab443e09eced6fca6 --client_secret 5264E7A842BD47Ceaa57e6e6Dd12E311
